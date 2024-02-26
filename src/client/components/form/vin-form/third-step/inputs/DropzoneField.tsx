@@ -24,9 +24,8 @@ export const DropzoneField: React.FC<DropzoneFieldProps> = ({ setValue }) => {
       "text/html": [".html", ".htm", ".webp"],
     },
     onDrop: (files) => {
-      const newFile: FileWithPath = files[0];
       const newArr: FileWithPath[] = images;
-      newArr.push(newFile);
+      files.map((file: FileWithPath) => newArr.push(file))
       setImages(newArr);
       setValue("Car Images", newArr);
     },
