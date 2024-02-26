@@ -20,7 +20,7 @@ export const HeroVideo = styled.video`
   left: 0;
   object-fit: cover;
   opacity: 0.3;
-`
+`;
 
 export const HeroTitle = styled.h1`
   font-size: 250px;
@@ -42,8 +42,21 @@ export const HeroContent = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
-  z-index: 10;
-`
+  z-index: 8;
+`;
+
+export const HeroGradient = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(11, 11, 11, 1) 100%
+  );
+`;
 
 export const HeroSubtitleContainer = styled.div`
   display: flex;
