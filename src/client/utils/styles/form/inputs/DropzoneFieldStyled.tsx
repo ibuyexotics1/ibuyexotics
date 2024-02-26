@@ -66,7 +66,7 @@ export const FileDetails = styled.div`
 export const FileName = styled.p`
   color: white;
   font-size: 15px;
-  width: 50%;
+  width: 100px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
