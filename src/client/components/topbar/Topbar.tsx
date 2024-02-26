@@ -1,16 +1,20 @@
-import { postTest } from "../../utils/api";
 import {
+  BurgerLine,
+  BurgerWrapper,
   TopbarContainer,
-  TopbarLine,
-  TopbarTitle,
 } from "../../utils/styles/topbar/TopbarStyled";
 
-export const Topbar = () => {
+type props = {
+  handleActive: () => void;
+};
+
+export const Topbar: React.FC<props> = ({ handleActive }) => {
   return (
     <TopbarContainer>
-      <TopbarLine />
-      <TopbarTitle>i Buy exotic cars</TopbarTitle>
-      <TopbarLine />
+      <BurgerWrapper onClick={handleActive}>
+        <BurgerLine />
+        <BurgerLine />
+      </BurgerWrapper>
     </TopbarContainer>
   );
 };
