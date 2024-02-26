@@ -94,7 +94,7 @@ export const CarInfoForm: React.FC<props> = ({
           Back
         </FormPrevious>
         <FormSubmit type="submit">
-          Preview <FormSteps>3/3</FormSteps>
+          Submit <FormSteps>3/3</FormSteps>
         </FormSubmit>
       </InfoFormContainer>
     </NextStepContainer>

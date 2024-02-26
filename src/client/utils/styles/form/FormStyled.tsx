@@ -30,7 +30,7 @@ export const FormSection = styled.section`
   width: 100%;
 `;
 
-export const FormInitialContainer = styled(motion.div)<LoadingProps>`
+export const FormInitialContainer = styled(motion.div) <LoadingProps>`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   max-width: 1200px;
@@ -60,7 +60,6 @@ export const FormSubtitle = styled.p`
   font-size: 20px;
   text-transform: uppercase;
   color: gold;
-  font-family: Lato;
 
   @media (max-width: 1024px) {
     font-size: 15px;
@@ -69,7 +68,6 @@ export const FormSubtitle = styled.p`
 
 export const FormTitle = styled.h2`
   font-size: 40px;
-  font-family: Lato;
   font-weight: 800;
   color: white;
   text-transform: uppercase;
@@ -128,7 +126,6 @@ export const FormSubmit = styled.button`
   text-transform: uppercase;
   color: black;
   padding: 0px 20px;
-  font-family: Lato;
 
   @media (max-width: 1024px) {
     width: 100%;
@@ -151,7 +148,6 @@ export const FormSteps = styled.div`
 export const InputError = styled.p`
   font-size: 15px;
   color: red;
-  font-family: Lato;
 `;
 
 export const FormPrevious = styled.button`
@@ -169,7 +165,6 @@ export const FormPrevious = styled.button`
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
-  font-family: Lato;
 
   @media (max-width: 1024px) {
     width: 100%;
@@ -184,7 +179,6 @@ export const BackText = styled.p`
   position: absolute;
   font-weight: bold;
   left: 10%;
-  font-family: Lato;
 
   @media (max-width: 1100px) {
     display: none;

@@ -6,7 +6,6 @@ import { HomeContainer } from "../utils/styles/home/HomeStyled";
 export const Homepage = () => {
   return (
     <HomeContainer>
-      <Topbar />
       <Hero />
       <Form />
     </HomeContainer>
