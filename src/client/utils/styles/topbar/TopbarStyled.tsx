@@ -1,12 +1,16 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const TopbarContainer = styled.div`
+type TopbarProps = {
+  isActive: boolean
+}
+
+export const TopbarContainer = styled.div<TopbarProps>`
   display: flex;
   justify-content: center;
   align-items: flex-end;
   flex-direction: column;
-  position: absolute;
+  position: ${props => props.isActive ? 'fixed' : 'absolute'};
   top: 0;
   width: 100%;
   z-index: 10;

@@ -14,7 +14,7 @@ type props = {
 
 export const Topbar: React.FC<props> = ({ handleActive, isActive }) => {
   return (
-    <TopbarContainer>
+    <TopbarContainer isActive={isActive}>
       <BurgerWrapper onClick={handleActive}>
         <BurgerLine
           initial={{ translateY: 0, rotateZ: 0 }}
