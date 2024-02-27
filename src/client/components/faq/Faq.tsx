@@ -24,7 +24,7 @@ export const Faq = () => {
                         <FaqQuestionContainer
                             className={isOpen[item.id] ? 'active' : 'inactive'}
                         >
-                            <FaqQuestion>{item.question}: {item.id}</FaqQuestion>
+                            <FaqQuestion>{item.question}</FaqQuestion>
                             <FaqDownArrow className={isOpen[item.id] ? 'active' : 'inactive'} />
                         </FaqQuestionContainer>
 
@@ -34,7 +34,7 @@ export const Faq = () => {
                             animate={isOpen[item.id] ? 'open' : 'closed'}
                             transition={{ duration: 0.3, ease: easeInOut }}
                         >
-                            <FaqAnswer>{item.answer}: {item.id}</FaqAnswer>
+                            <FaqAnswer>{item.answer}</FaqAnswer>
                         </FaqAnswerContainer>
                     </FaqContainer>
                 ))}
