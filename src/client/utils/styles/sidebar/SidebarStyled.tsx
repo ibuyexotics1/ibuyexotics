@@ -36,15 +36,23 @@ export const NavContainer = styled.div`
   height: 150px;
   position: relative;
   overflow: hidden;
+
+  @media (max-width: 1024px) {
+    height: 50px;
+  }
 `;
 
-export const NavText = styled(motion(Link))<NavTextProps>`
+export const NavText = styled(motion(Link)) <NavTextProps>`
   font-size: 150px;
   font-family: Six Caps;
   color: ${(props) => (props.isInactiveHover ? "grey" : "white")};
   text-transform: uppercase;
   letter-spacing: 5px;
   text-decoration: none;
+  
+  @media (max-width: 1024px) {
+    font-size: 50px;
+  }
 `;
 
 export const NavTextAfter = styled(motion(Link))`
@@ -55,4 +63,12 @@ export const NavTextAfter = styled(motion(Link))`
   text-transform: uppercase;
   letter-spacing: 5px;
   text-decoration: none;
+
+  @media (max-width: 1024px) {
+    font-size: 50px;
+  }
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;

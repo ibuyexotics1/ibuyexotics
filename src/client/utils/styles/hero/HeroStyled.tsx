@@ -32,7 +32,7 @@ export const HeroTitle = styled.h1`
   text-align: center;
 
   @media (max-width: 1024px) {
-    font-size: 30px;
+    font-size: 80px;
   }
 `;
 

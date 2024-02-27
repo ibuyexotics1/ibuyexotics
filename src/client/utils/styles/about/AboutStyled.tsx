@@ -4,7 +4,8 @@ export const AboutContainer = styled.section`
   display: grid;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  min-height: 400px;
+  height: 100%;
   padding: 50px 20px;
   width: 100%;
 `;
@@ -16,6 +17,10 @@ export const AboutWrapper = styled.div`
   align-items: center; 
   grid-gap: 10px;
   max-width: 1200px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
 `
 
 export const AboutTitleWrapper = styled.div`
@@ -27,6 +32,10 @@ export const AboutTitleWrapper = styled.div`
   background: gold;
   padding: 40px 20px;
   border-radius: 5px;
+
+  @media (max-width: 1024px) {
+    padding: 20px;
+  }
 `
 
 export const AboutTitle = styled.h2`
@@ -35,6 +44,11 @@ export const AboutTitle = styled.h2`
   color: #1a1a1a;
   text-transform: uppercase;
   letter-spacing: 5px;
+
+  @media (max-width: 1024px) {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
 `
 
 export const AboutSubTitle = styled.p`
@@ -57,4 +71,8 @@ export const AboutText = styled.p`
   font-size: 20px;
   color: rgb(255, 255, 255,0.5);
   font-weight: 300;
+
+  @media (max-width: 1024px) {
+    font-size: 15px;
+  }
 `

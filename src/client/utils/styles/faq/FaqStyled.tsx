@@ -31,6 +31,11 @@ export const FaqTitle = styled.h2`
     margin-bottom: 30px;
     letter-spacing: 5px;
     text-transform: uppercase;
+
+    @media (max-width: 1024px) {
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
 `
 
 export const FaqContainer = styled.div`
@@ -60,6 +65,10 @@ export const FaqQuestionContainer = styled.div`
 export const FaqQuestion = styled.h3`
     font-size: 20px;
     color: white;
+
+    @media (max-width: 1024px) {
+        font-size: 15px;
+    }
 `
 
 export const FaqDownArrow = styled(FaChevronDown)`
@@ -88,4 +97,8 @@ export const FaqAnswer = styled.p`
     color: rgb(250, 250, 250, 0.7);
     font-size: 20px;
     color: #1a1a1a;
+
+    @media (max-width: 1024px) {
+        font-size: 15px;
+    }
 `

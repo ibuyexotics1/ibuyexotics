@@ -11,6 +11,10 @@ export const TopbarContainer = styled.div`
   width: 100%;
   z-index: 10;
   padding: 50px 80px;
+
+  @media (max-width: 1024px) {
+    padding: 30px;
+  }
 `;
 
 export const BurgerWrapper = styled.div`
