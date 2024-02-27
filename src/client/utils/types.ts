@@ -131,3 +131,8 @@ export interface RadioInputType {
 export type FaqOpenType = {
   [id: number]: boolean
 }
+
+export type FaqDataType = {
+  link: string;
+  name: string;
+}
