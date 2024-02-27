@@ -46,7 +46,7 @@ export const DropzoneField: React.FC<DropzoneFieldProps> = ({ setValue }) => {
       >
         <input type="file" name="file" {...getInputProps()} />
         <DropzoneBoxLabel>
-          Drag & drop up to 3 images here, or click to select images
+          Drag & drop up to {totalMax} images here, or click to select images
         </DropzoneBoxLabel>
       </DropzoneBox>
       <FileDetailsWrapper>
