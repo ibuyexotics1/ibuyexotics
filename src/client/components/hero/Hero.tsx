@@ -12,7 +12,7 @@ import { FaChevronDown } from "react-icons/fa";
 export const Hero = () => {
   return (
     <HeroContainer>
-      <HeroVideo loop={true} autoPlay={true} src="/porsche.mp4" />
+      <HeroVideo loop autoPlay src="/porsche.mp4" muted />
       <HeroContent>
         <HeroTitle>i buy exotics</HeroTitle>
         <HeroButton>Get an offer</HeroButton>
