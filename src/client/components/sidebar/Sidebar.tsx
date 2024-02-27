@@ -13,7 +13,12 @@ export const Sidebar = () => {
   const navArr: Array<string> = ["about", "vin contact", "faq"];
 
   return (
-    <SidebarContainer>
+    <SidebarContainer
+      key="sidebar"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <SidebarNav>
         {navArr.map((navItem: string) => (
           <NavContainer
