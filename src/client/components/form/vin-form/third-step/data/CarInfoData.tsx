@@ -1,11 +1,4 @@
-export interface SelectInputType {
-  propName: string;
-  selectOptions: string[];
-}
-
-export interface RadioInputType {
-  propName: string;
-}
+import { SelectInputType, RadioInputType } from "../../../../../utils/types";
 
 export const VehicleConditionData: SelectInputType = {
   propName: "Vehicle Condition",
