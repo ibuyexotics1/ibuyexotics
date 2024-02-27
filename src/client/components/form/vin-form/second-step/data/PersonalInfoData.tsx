@@ -1,29 +1,4 @@
-export interface SelectInputType {
-  selectOptions: string[];
-}
-
-export type InfoFieldType = {
-  propName: string;
-  inputType: string;
-  minNum: number;
-  maxNum: number;
-  pattern: RegExp | undefined;
-};
-
-export const selectOptions: SelectInputType = {
-  selectOptions: [
-    "Select Body Style",
-    "Convertible",
-    "Sedan",
-    "Coupe",
-    "SUV",
-    "Exotic",
-    "Wagon",
-    "Van",
-    "Hatchback",
-    "Truck",
-  ],
-};
+import { InfoFieldType } from "../../../../../utils/types";
 
 export const FirstNameData: InfoFieldType = {
   propName: "First Name",
@@ -88,12 +63,4 @@ export const CarMileageData: InfoFieldType = {
   minNum: 1,
   maxNum: 64,
   pattern: /^[0-9,]+$/,
-};
-
-export const TrimData: InfoFieldType = {
-  propName: "Trim (optional)",
-  inputType: "text",
-  minNum: 1,
-  maxNum: 64,
-  pattern: undefined,
 };
