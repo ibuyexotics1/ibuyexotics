@@ -18,7 +18,7 @@ export const navTextVariants = {
 
 export const faqVariants = {
   open: {
-    height: '70px',
+    height: '100px',
   },
   closed: {
     height: '0px',
