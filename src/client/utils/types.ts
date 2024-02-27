@@ -3,7 +3,6 @@ import { FieldErrorsImpl, UseFormGetValues, UseFormRegister, UseFormSetValue } f
 
 
 // Data types
-
 export type VinObj = {
   "VIN": string
 }
@@ -23,7 +22,6 @@ export type DataType = {
 }
 
 // Info form params
-
 export type InfoParams = {
   "First Name": string;
   "Last Name": string;
@@ -50,7 +48,6 @@ export type InfoFormFieldProps = {
 };
 
 // Car info form params
-
 export type CarImagesParams = {
   carImages: FileWithPath[]
 }
@@ -106,3 +103,31 @@ export type DropzoneFieldProps = {
     "Car Images": FileWithPath[];
   }>;
 };
+
+//Personal info data types
+export interface SelectPersonalInputType {
+  selectOptions: string[];
+}
+
+export type InfoFieldType = {
+  propName: string;
+  inputType: string;
+  minNum: number;
+  maxNum: number;
+  pattern: RegExp | undefined;
+};
+
+//Car info data types
+export interface SelectInputType {
+  propName: string;
+  selectOptions: string[];
+}
+
+export interface RadioInputType {
+  propName: string;
+}
+
+//Faq types
+export type FaqOpenType = {
+  [id: number]: boolean
+}
