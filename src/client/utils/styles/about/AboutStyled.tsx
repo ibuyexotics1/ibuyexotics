@@ -5,9 +5,14 @@ export const AboutContainer = styled.section`
   justify-content: center;
   align-items: center;
   min-height: 400px;
-  height: 100%;
+  height: max-content;
   padding: 50px 20px;
   width: 100%;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    min-height: 200px;
+  }
 `;
 
 export const AboutWrapper = styled.div`
@@ -46,7 +51,7 @@ export const AboutTitle = styled.h2`
   letter-spacing: 5px;
 
   @media (max-width: 1024px) {
-    font-size: 30px;
+    font-size: 50px;
     letter-spacing: 3px;
   }
 `

@@ -33,7 +33,7 @@ export const FaqTitle = styled.h2`
     text-transform: uppercase;
 
     @media (max-width: 1024px) {
-        font-size: 30px;
+        font-size: 40px;
         letter-spacing: 3px;
     }
 `
