@@ -4,9 +4,6 @@ import express from "express";
 import ViteExpress from "vite-express";
 import bodyParser from 'body-parser'
 import emailRouter from "./routes/email.route.js";
-import multer from 'multer'
-
-const upload = multer({ dest: 'uploads/' });
 
 const app = express();
 app.use(bodyParser.json());
@@ -15,12 +12,7 @@ app.use(
     extended: true,
   })
 );
-app.use('/email', emailRouter);
-
-app.post('/test', upload.single('image'), function (req, res, next) {
-  console.log(req)
-  console.log(req.file)
-})
+app.use('/api/email', emailRouter);
 
 ViteExpress.listen(app, 3000, () =>
   console.log("Server is listening on port 3000..."),
