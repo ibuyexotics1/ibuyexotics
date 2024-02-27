@@ -7,10 +7,15 @@ import {
   NavTextAfter,
 } from "../../utils/styles/sidebar/SidebarStyled";
 import { navBackTextVariants, navTextVariants } from "../../utils/variants";
+import { sidebarNav } from "./data/SidebarData";
+import { FaqDataType } from "../../utils/types";
 
-export const Sidebar = () => {
+type props = {
+  handleActive: () => void
+}
+
+export const Sidebar: React.FC<props> = ({ handleActive }) => {
   const [isHover, setHover] = useState<string>("");
-  const navArr: Array<string> = ["about", "vin contact", "faq"];
 
   return (
     <SidebarContainer
@@ -20,28 +25,31 @@ export const Sidebar = () => {
       exit={{ opacity: 0 }}
     >
       <SidebarNav>
-        {navArr.map((navItem: string) => (
+        {sidebarNav.map((navItem: FaqDataType) => (
           <NavContainer
+            key={navItem.name}
             onMouseLeave={() => setHover("")}
-            onMouseEnter={() => setHover(navItem)}
+            onMouseEnter={() => setHover(navItem.name)}
           >
             <NavText
               variants={navTextVariants}
-              animate={isHover === navItem ? "active" : "inactive"}
+              animate={isHover === navItem.name ? "active" : "inactive"}
               transition={{ duration: 0.2 }}
-              isInactiveHover={isHover !== "" && isHover !== navItem}
-              to="#"
+              isInactiveHover={isHover !== "" && isHover !== navItem.name}
+              to={navItem.link}
+              onClick={handleActive}
             >
-              {navItem}
+              {navItem.name}
             </NavText>
             <NavTextAfter
               initial={{ y: "100%" }}
               variants={navBackTextVariants}
               transition={{ duration: 0.2 }}
-              animate={isHover === navItem ? "active" : "inactive"}
-              to="#"
+              animate={isHover === navItem.name ? "active" : "inactive"}
+              to={navItem.link}
+              onClick={handleActive}
             >
-              {navItem}
+              {navItem.name}
             </NavTextAfter>
           </NavContainer>
         ))}
