@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import {
   HeroArrow,
   HeroButton,
@@ -10,12 +11,18 @@ import {
 import { FaChevronDown } from "react-icons/fa";
 
 export const Hero = () => {
+  const navigate = useNavigate()
+
+  const handleOffer = () => {
+    navigate('/#vin')
+  }
+
   return (
     <HeroContainer>
       <HeroVideo loop autoPlay src="/porsche.mp4" muted />
       <HeroContent>
         <HeroTitle>i buy exotics</HeroTitle>
-        <HeroButton>Get an offer</HeroButton>
+        <HeroButton onClick={handleOffer}>Get an offer</HeroButton>
         <HeroArrow
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 1, repeat: Infinity }}
