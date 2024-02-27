@@ -17,7 +17,7 @@ export const Homepage = () => {
 
   return (
     <HomeContainer>
-      <AnimatePresence>{isActive && <Sidebar />}</AnimatePresence>
+      <AnimatePresence>{isActive && <Sidebar handleActive={handleActive} />}</AnimatePresence>
       <Topbar isActive={isActive} handleActive={handleActive} />
       <Hero />
       <About />
