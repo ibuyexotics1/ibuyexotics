@@ -19,7 +19,7 @@ export const Hero = () => {
 
   return (
     <HeroContainer>
-      <HeroVideo loop autoPlay src="/porsche.mp4" muted />
+      <HeroVideo playsInline loop autoPlay src="/porsche.mp4" muted />
       <HeroContent>
         <HeroTitle>i buy exotics</HeroTitle>
         <HeroButton onClick={handleOffer}>Get an offer</HeroButton>
