@@ -41,7 +41,6 @@ export const HeroContent = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
   z-index: 8;
 `;
 
