@@ -16,7 +16,7 @@ export const Faq = () => {
     };
 
     return (
-        <FaqSectionContainer>
+        <FaqSectionContainer id="faq">
             <FaqContentWrapper>
                 <FaqTitle>Frequently asked questions</FaqTitle>
                 {FaqData.map((item: FaqObj) => (

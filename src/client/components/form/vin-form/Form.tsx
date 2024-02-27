@@ -22,5 +22,5 @@ export const Form = () => {
     />,
   ];
 
-  return <FormSection>{steps[stepIdx]}</FormSection>;
+  return <FormSection id='vin'>{steps[stepIdx]}</FormSection>;
 };

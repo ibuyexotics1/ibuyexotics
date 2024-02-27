@@ -2,7 +2,7 @@ import { AboutContainer, AboutContent, AboutSubTitle, AboutText, AboutTitle, Abo
 
 export const About = () => {
     return (
-        <AboutContainer>
+        <AboutContainer id='about'>
             <AboutWrapper>
                 <AboutTitleWrapper>
                     <AboutTitle>About Us</AboutTitle>
