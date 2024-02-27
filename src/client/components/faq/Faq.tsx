@@ -3,13 +3,10 @@ import { FaqSectionContainer, FaqContentWrapper, FaqContainer, FaqQuestionContai
 import { FaqData, FaqObj } from "./data/FaqData"
 import { faqVariants } from "../../utils/variants"
 import { easeInOut } from "framer-motion"
-
-type arrType = {
-    [id: number]: boolean
-}
+import { FaqOpenType } from "../../utils/types"
 
 export const Faq = () => {
-    const [isOpen, setOpen] = useState<arrType>({});
+    const [isOpen, setOpen] = useState<FaqOpenType>({});
 
     const handleFaq = (id: number) => {
         setOpen(prev => ({
