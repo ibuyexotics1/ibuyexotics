@@ -9,7 +9,7 @@ export const About = () => {
                     <AboutSubTitle>Learn about our service</AboutSubTitle>
                 </AboutTitleWrapper>
                 <AboutContent>
-                    <AboutText>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde quas doloremque deserunt id ad dolore, at exercitationem, aperiam ab ipsam assumenda sit. Nisi expedita adipisci sint illo rerum, quae nesciunt?</AboutText>
+                    <AboutText>I Buy Exotics utilizes VIN decoding technology that we've developed to streamline the process of selling your car to a team of industry experts that you can trust. Just submit your exotic car information, receive an offer, and get paid! Visit the FAQ section if you have any questions.</AboutText>
                 </AboutContent>
             </AboutWrapper>
         </AboutContainer>
