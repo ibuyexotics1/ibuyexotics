@@ -39,6 +39,7 @@ export const FaqContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
+    cursor: pointer;
 `
 
 export const FaqQuestionContainer = styled.div`
