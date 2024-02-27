@@ -18,12 +18,25 @@ export const BurgerWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   cursor: pointer;
+  position: relative;
+  min-height: 30px;
+  width: 30px;
 `;
 
 export const BurgerLine = styled(motion.div)`
+  position: relative;
+  display: flex;
   height: 3px;
-  width: 30px;
+  width: 25px;
+  background: white;
+`;
+
+export const BurgerLine2 = styled(motion.div)`
+  position: relative;
+  display: flex;
+  height: 3px;
+  width: 25px;
   background: white;
 `;
