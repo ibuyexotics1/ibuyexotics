@@ -11,8 +11,9 @@ export const LoadingContainer = styled(motion.div)`
   align-items: center;
   color: gold;
   font-size: 50px;
-  position: absolute;
+  position: fixed;
   top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   background: rgb(11, 11, 11, 0.9);
@@ -25,9 +26,10 @@ export const FormSection = styled.section`
   justify-content: center;
   align-items: center;
   height: 100%;
-  background: #0b0b0b;
+  background: #101010;
   position: relative;
   width: 100%;
+  padding: 50px 0px;
 `;
 
 export const FormInitialContainer = styled(motion.div) <LoadingProps>`
