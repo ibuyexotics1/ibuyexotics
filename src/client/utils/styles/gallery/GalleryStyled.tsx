@@ -35,6 +35,7 @@ export const GalleryImgContainer = styled.div<ImgProps>`
   height: 200px;
   aspect-ratio: 1 / 1;
   width: 100%;
+  cursor: pointer;
 
   @media (max-width: 1024px) {
     max-height: 400px;
