@@ -11,8 +11,8 @@ import { sidebarNav } from "./data/SidebarData";
 import { FaqDataType } from "../../utils/types";
 
 type props = {
-  handleActive: () => void
-}
+  handleActive: () => void;
+};
 
 export const Sidebar: React.FC<props> = ({ handleActive }) => {
   const [isHover, setHover] = useState<string>("");
@@ -23,6 +23,7 @@ export const Sidebar: React.FC<props> = ({ handleActive }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
     >
       <SidebarNav>
         {sidebarNav.map((navItem: FaqDataType) => (
