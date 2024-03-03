@@ -3,6 +3,7 @@ import {
   DropzoneBox,
   DropzoneBoxLabel,
   DropzoneContainer,
+  DropzoneInput,
   FileDetails,
   FileDetailsWrapper,
   FileName,
@@ -25,7 +26,7 @@ export const DropzoneField: React.FC<DropzoneFieldProps> = ({ setValue }) => {
     },
     onDrop: (files) => {
       const newArr: FileWithPath[] = images;
-      files.map((file: FileWithPath) => newArr.push(file))
+      files.map((file: FileWithPath) => newArr.push(file));
       setImages(newArr);
       setValue("Car Images", newArr);
     },
@@ -44,7 +45,7 @@ export const DropzoneField: React.FC<DropzoneFieldProps> = ({ setValue }) => {
           onClick: (e: React.MouseEvent<HTMLDivElement>) => e.preventDefault(),
         })}
       >
-        <input type="file" name="file" {...getInputProps()} />
+        <DropzoneInput type="file" name="file" {...getInputProps()} />
         <DropzoneBoxLabel>
           Drag & drop up to {totalMax} images here, or click to select images
         </DropzoneBoxLabel>
