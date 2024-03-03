@@ -7,6 +7,7 @@ import { Sidebar } from "../components/sidebar/Sidebar";
 import { About } from "../components/about/About";
 import { AnimatePresence } from "framer-motion";
 import { Faq } from "../components/faq/Faq";
+import { Gallery } from "../components/gallery/Gallery";
 
 export const Homepage = () => {
   const [isActive, setActive] = useState<boolean>(false);
@@ -17,11 +18,14 @@ export const Homepage = () => {
 
   return (
     <HomeContainer>
-      <AnimatePresence>{isActive && <Sidebar handleActive={handleActive} />}</AnimatePresence>
+      <AnimatePresence>
+        {isActive && <Sidebar handleActive={handleActive} />}
+      </AnimatePresence>
       <Topbar isActive={isActive} handleActive={handleActive} />
       <Hero />
-      <About />
       <Form />
+      <About />
+      <Gallery />
       <Faq />
     </HomeContainer>
   );
