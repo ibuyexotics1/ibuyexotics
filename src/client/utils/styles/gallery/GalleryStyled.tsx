@@ -31,9 +31,17 @@ export const GalleryImgContainer = styled.div<ImgProps>`
   background-image: ${(props) => `url(${props.imgSrc})`};
   background-size: cover;
   background-position: center;
+  height: 100%;
   height: 200px;
+  aspect-ratio: 1 / 1;
+  width: 100%;
 
   @media (max-width: 1024px) {
-    height: 160px;
+    max-height: 400px;
+    height: 100%;
+  }
+
+  @media (max-width: 700px) {
+    height: 100%;
   }
 `;
