@@ -46,7 +46,7 @@ export const InfoInputField: React.FC<InputProps> = ({
   return (
     <InputContainer>
       <InputLabelContainer>
-        <InputLabel>{propName}</InputLabel>
+        <InputLabel htmlFor={propName}>{propName}</InputLabel>
         {errors[propName as keyof InfoParams] && (
           <InputError>
             {errors[propName as keyof InfoParams]?.message}
@@ -54,6 +54,7 @@ export const InfoInputField: React.FC<InputProps> = ({
         )}
       </InputLabelContainer>
       <InputField
+        id={propName}
         type={inputType}
         {...register(`${propName}` as keyof InfoParams, validationRules)}
       />

@@ -37,7 +37,7 @@ export const TextAreaField: React.FC<InputProps> = ({
   return (
     <TextAreaContainer>
       <InputLabelContainer>
-        <InputLabel>{propName}</InputLabel>
+        <InputLabel htmlFor={propName}>{propName}</InputLabel>
         {errors[propName as keyof CarInfoParams] && (
           <InputError>
             {errors[propName as keyof CarInfoParams]?.message}
@@ -45,6 +45,7 @@ export const TextAreaField: React.FC<InputProps> = ({
         )}
       </InputLabelContainer>
       <TextAreaInput
+        id={propName}
         {...register(`${propName}` as keyof CarInfoParams, {
           required: `${propName} is required`,
           minLength: 2,

@@ -103,7 +103,7 @@ export const VinDecoderForm: React.FC<props> = ({
       <FormContainer onSubmit={handleSubmit(onSubmit)}>
         <InputContainer>
           <InputLabelContainer>
-            <InputLabel>VIN</InputLabel>
+            <InputLabel htmlFor="VIN">VIN</InputLabel>
             {errors["VIN"] && <InputError>{errors["VIN"].message}</InputError>}
           </InputLabelContainer>
           <InputField
