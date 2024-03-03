@@ -136,3 +136,8 @@ export type FaqDataType = {
   link: string;
   name: string;
 }
+
+// Gallery types
+export type GalleryDataType = {
+  imgSrc: string;
+}
