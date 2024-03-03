@@ -36,6 +36,10 @@ export const DropzoneBox = styled.div`
   }
 `;
 
+export const DropzoneInput = styled.input`
+  background: none;
+`;
+
 export const DropzoneBoxLabel = styled.p`
   color: #ffffff;
   font-size: 15px;
