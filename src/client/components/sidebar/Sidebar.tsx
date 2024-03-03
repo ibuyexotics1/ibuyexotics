@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   SidebarContainer,
   SidebarNav,
@@ -12,10 +12,18 @@ import { FaqDataType } from "../../utils/types";
 
 type props = {
   handleActive: () => void;
+  isActive: boolean;
 };
 
-export const Sidebar: React.FC<props> = ({ handleActive }) => {
+export const Sidebar: React.FC<props> = ({ handleActive, isActive }) => {
   const [isHover, setHover] = useState<string>("");
+
+  useEffect(() => {
+    if (isActive) document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
 
   return (
     <SidebarContainer
