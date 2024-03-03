@@ -48,7 +48,6 @@ export const PersonalInfoForm: React.FC<props> = ({
   const onSubmit = (data: InfoParams) => {
     handlePersonalData(data);
     handleNext();
-    console.log(data);
   };
 
   return (
