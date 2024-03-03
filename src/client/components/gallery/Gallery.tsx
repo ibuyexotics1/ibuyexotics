@@ -11,7 +11,7 @@ export const Gallery = () => {
     <GalleryContainer>
       <GalleryWrapper>
         {GalleryData.map((img: GalleryDataType) => (
-          <GalleryImgContainer imgSrc={img.imgSrc} />
+          <GalleryImgContainer key={img.imgSrc} imgSrc={img.imgSrc} />
         ))}
       </GalleryWrapper>
     </GalleryContainer>
