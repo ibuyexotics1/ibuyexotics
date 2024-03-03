@@ -10,9 +10,10 @@ export const LightboxContainer = styled(motion.div)`
   top: 0;
   left: 0;
   background: rgb(0, 0, 0, 0.9);
-  height: 100%;
+  height: 100vh;
   width: 100%;
   padding: 20px;
+  overflow: hidden;
 `;
 
 export const LightboxClose = styled(IoClose)`
