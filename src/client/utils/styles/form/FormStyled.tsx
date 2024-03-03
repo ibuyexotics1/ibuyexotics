@@ -26,13 +26,12 @@ export const FormSection = styled.section`
   justify-content: center;
   align-items: center;
   height: 100%;
-  background: #101010;
   position: relative;
   width: 100%;
   padding: 50px 0px;
 `;
 
-export const FormInitialContainer = styled(motion.div) <LoadingProps>`
+export const FormInitialContainer = styled(motion.div)<LoadingProps>`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   max-width: 1200px;
