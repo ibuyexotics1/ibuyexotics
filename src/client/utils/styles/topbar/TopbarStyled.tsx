@@ -28,7 +28,7 @@ export const TopbarLogo = styled.img`
   width: 150px;
 
   @media (max-width: 1024px) {
-    width: 110px;
+    width: 130px;
   }
 `;
 
