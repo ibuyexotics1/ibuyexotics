@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import ScrollToAnchor from "./utils/scroll/ScrollToAnchor";
 
 function App() {
-  ScrollToAnchor()
+  ScrollToAnchor();
 
   return (
     <>
