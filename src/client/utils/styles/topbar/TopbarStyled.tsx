@@ -2,22 +2,33 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 
 type TopbarProps = {
-  isActive: boolean
-}
+  isActive: boolean;
+};
 
 export const TopbarContainer = styled.div<TopbarProps>`
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-direction: column;
-  position: ${props => props.isActive ? 'fixed' : 'absolute'};
+  justify-content: space-between;
+  align-items: center;
+  position: ${(props) => (props.isActive ? "fixed" : "absolute")};
   top: 0;
   width: 100%;
   z-index: 10;
-  padding: 50px 80px;
+  padding: 20px 80px;
 
   @media (max-width: 1024px) {
-    padding: 30px;
+    padding: 10px 20px;
+  }
+`;
+
+export const LogoWrapper = styled.a`
+  cursor: pointer;
+`;
+
+export const TopbarLogo = styled.img`
+  width: 150px;
+
+  @media (max-width: 1024px) {
+    width: 110px;
   }
 `;
 
