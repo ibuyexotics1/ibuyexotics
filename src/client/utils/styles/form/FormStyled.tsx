@@ -38,10 +38,10 @@ export const FormInitialContainer = styled(motion.div)<LoadingProps>`
   width: 100%;
   justify-content: center;
   align-items: center;
-  min-height: 300px;
-  position: relative;
+  min-height: 200px;
   opacity: ${(props) => (props.isLoading ? "0" : 1)};
   padding: 0px 20px;
+  position: relative;
 
   @media (max-width: 1100px) {
     grid-template-columns: 1fr;
@@ -174,14 +174,37 @@ export const FormPrevious = styled.button`
 `;
 
 export const BackText = styled.p`
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   font-size: 150px;
   color: white;
   opacity: 0.01;
   position: absolute;
   font-weight: bold;
-  left: 10%;
+  margin-bottom: 50px;
 
   @media (max-width: 1100px) {
     display: none;
+  }
+`;
+
+export const FormDisclaimer = styled.p`
+  font-size: 15px;
+  color: rgb(250, 250, 250, 0.7);
+  width: 100%;
+  text-align: center;
+  grid-column: span 2;
+  height: max-content;
+
+  span {
+    color: gold;
+  }
+
+  @media (max-width: 1100px) {
+    grid-column: span 1;
+    margin-top: 20px;
   }
 `;
