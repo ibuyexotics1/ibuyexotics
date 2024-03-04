@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import {
   BackText,
   FormContainer,
+  FormDisclaimer,
   FormInitialContainer,
   FormSteps,
   FormSubmit,
@@ -122,6 +123,10 @@ export const VinDecoderForm: React.FC<props> = ({
           Continue <FormSteps>1/3</FormSteps>
         </FormSubmit>
       </FormContainer>
+      <FormDisclaimer>
+        If you are facing issues uploading images, or VIN, please email your car
+        photos to: <span>i-buy-exotics1@gmail.com</span>
+      </FormDisclaimer>
     </FormInitialContainer>
   );
 };
